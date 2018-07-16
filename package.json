@@ -1,6 +1,6 @@
 {
   "name": "callbag-to-promise",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "👜 Callbag operator which converts source to a promise containing last emitted value.",
   "main": "dist/callbag-to-promise.js",
   "module": "dist/callbag-to-promise.esm.js",
