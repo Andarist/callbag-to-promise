@@ -89,6 +89,7 @@ test('rejects on completed empty streams', () => {
       return promise
     })
     .catch(err => {
-      expect(err.message).toBe('no elements in sequence')
+      expect(err.message).toBe('No elements in sequence.')
+      expect(err.code).toBe('NO_ELEMENTS')
     })
 })

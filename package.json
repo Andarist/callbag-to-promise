@@ -46,7 +46,7 @@
     "rollup-plugin-babel": "^4.0.3"
   },
   "dependencies": {
-    "callbag-last-element": "^1.0.0",
+    "callbag-last-element": "^1.0.1",
     "callbag-subscribe": "^1.4.1"
   }
 }
