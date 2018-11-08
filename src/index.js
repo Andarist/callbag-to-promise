@@ -7,7 +7,9 @@ export default function toPromise(source) {
       next: resolve,
       error: reject,
       complete: () => {
-        reject(new Error('no elements in sequence'))
+        const err = new Error('No elements in sequence.')
+        err.code = 'NO_ELEMENTS'
+        reject(err)
       },
     })(last()(source))
   })
