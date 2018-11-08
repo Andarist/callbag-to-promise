@@ -1,4 +1,4 @@
-import last from 'callbag-last'
+import last from 'callbag-last-element'
 import subscribe from 'callbag-subscribe'
 
 export default function toPromise(source) {
@@ -11,6 +11,6 @@ export default function toPromise(source) {
         err.code = 'NO_ELEMENTS'
         reject(err)
       },
-    })(last()(source))
+    })(last(source))
   })
 }
